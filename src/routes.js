@@ -50,6 +50,10 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
+//Build
+const PipelineRun = React.lazy(() => import('./views/build/pipelinerun'))
+const Builds = React.lazy(() => import('./views/build/builds'))
+
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
@@ -94,6 +98,11 @@ const routes = [
   { path: '/notifications/badges', name: 'Badges', element: Badges },
   { path: '/notifications/modals', name: 'Modals', element: Modals },
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
+
+  { path: '/build', name: 'Build', element: Alerts, exact: true },
+  { path: '/build/builds', name: 'Builds', element: Builds },
+  { path: '/build/pipelinerun', name: 'PipelineRun', element: PipelineRun },
+
   { path: '/widgets', name: 'Widgets', element: Widgets },
 ]
 

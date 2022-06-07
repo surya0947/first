@@ -10,7 +10,7 @@ import {
   cilWallpaper,
   cilCloudUpload,
 } from '@coreui/icons'
-import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
+import { CNavGroup, CNavGroupItems, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
   {
