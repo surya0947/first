@@ -1,3 +1,11 @@
+import {
+  CTable,
+  CTableHead,
+  CTableRow,
+  CTableHeaderCell,
+  CTableBody,
+  CTableDataCell,
+} from '@coreui/react'
 import React, { Component } from 'react'
 // import {
 //   CCard,
@@ -50,12 +58,24 @@ class Car extends React.Component {
     if (!DataisLoaded) return <div>{this.test()}</div>
     return (
       <div className="Car">
-        <h1> Fetch data from an api in react </h1>
-        {items.map((item) => (
-          <ol key={item.id}>
-            User_Name: {item.username}, Full_Name: {item.name}, User_Email: {item.email}
-          </ol>
-        ))}
+        <CTable>
+          <CTableHead>
+            <CTableRow color="primary">
+              <CTableHeaderCell scope="col">Class</CTableHeaderCell>
+              <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
+              <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
+            </CTableRow>
+          </CTableHead>
+          <CTableBody>
+            {items.map((item) => (
+              <CTableRow color="Info" key={item.id}>
+                <CTableHeaderCell scope="row">User_Name: {item.username}</CTableHeaderCell>
+                <CTableDataCell>Full_Name: {item.name}</CTableDataCell>
+                <CTableDataCell>User_Email: {item.email}</CTableDataCell>
+              </CTableRow>
+            ))}
+          </CTableBody>
+        </CTable>
       </div>
     )
   }

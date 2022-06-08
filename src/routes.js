@@ -54,6 +54,12 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const PipelineRun = React.lazy(() => import('./views/build/pipelinerun'))
 const Builds = React.lazy(() => import('./views/build/builds'))
 
+//Home
+const Home = React.lazy(() => import('./views/home/Home'))
+
+//Projects
+const Projects = React.lazy(() => import('./views/projects/Projects'))
+
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
@@ -104,6 +110,9 @@ const routes = [
   { path: '/build/pipelinerun', name: 'PipelineRun', element: PipelineRun },
 
   { path: '/widgets', name: 'Widgets', element: Widgets },
+
+  { path: '/home', name: 'Home', element: Home },
+  { path: '/projects', name: 'Projects', element: Projects },
 ]
 
 export default routes
