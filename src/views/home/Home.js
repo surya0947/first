@@ -8,7 +8,6 @@ class Home extends React.Component {
         <h1>Welcome Jennifer</h1>
         <br></br>
         <br></br>
-        <br></br>
         <WelcomeWidgetsDropdown />
       </div>
     )
