@@ -1,7 +1,8 @@
 import React from 'react'
 import { CCard, CCardBody, CCardHeader } from '@coreui/react'
 
-const ProjectCard = (props) => {
+const ProductCard = (props) => {
+  console.log("--------", props)
   return (
     <CCard>
       <CCardHeader style={{ backgroundColor: '#37444f' }}>
@@ -10,11 +11,11 @@ const ProjectCard = (props) => {
       </CCardHeader>
       <CCardBody style={{ backgroundColor: 'whitespace' }}>
         <b>
-          <div style={{ color: 'blue' }}>Product: {props.product}</div>
-          <div style={{ color: 'green' }}>gitLoc: {props.gitLoc}</div>
-          <div style={{ color: 'blue' }}>clusterName: {props.clusterName}</div>
-          <div style={{ color: 'red' }}>cloud: {props.cloud}</div>
-          <div style={{ color: 'blue' }}>account: {props.account}</div>
+          <div style={{ color: 'blue' }}>Product: {props.data.product}</div>
+          <div style={{ color: 'green' }}>gitLoc: {props.data.gitLoc}</div>
+          <div style={{ color: 'blue' }}>clusterName: {props.data.clusterName}</div>
+          <div style={{ color: 'red' }}>cloud: {props.data.cloud}</div>
+          <div style={{ color: 'blue' }}>account: {props.data.account}</div>
         </b>
       </CCardBody>
     </CCard>
@@ -29,4 +30,4 @@ const ProjectCard = (props) => {
 // env: "qa",
 // region: "us-west-2"
 
-export default ProjectCard
+export default ProductCard
