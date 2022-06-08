@@ -259,7 +259,7 @@ const WelcomeWidgetsDropdown = () => {
       <CCol sm={6} lg={3}>
         <CWidgetStatsA
           className="mb-4"
-          color="primary"
+          color="dark"
           value={
             <>
               <span className="fs-6 fw-normal">
@@ -323,7 +323,7 @@ const WelcomeWidgetsDropdown = () => {
       <CCol sm={6} lg={3}>
         <CWidgetStatsA
           className="mb-4"
-          color="primary"
+          color="secondary"
           value={
             <>
               <span className="fs-6 fw-normal">
