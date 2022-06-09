@@ -61,13 +61,15 @@ const Home = React.lazy(() => import('./views/home/Home'))
 //Projects
 const Projects = React.lazy(() => import('./views/projects/Projects'))
 
+//Products un deploy
+const Products = React.lazy(() => import('./views/deploy/Products'))
+
 //Cost
 const CostOverview = React.lazy(() => import('./views/cost/CostOverview'))
 
 //Provisioning
 
 //Deploy
-
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
@@ -122,6 +124,8 @@ const routes = [
 
   { path: '/home', name: 'Home', element: Home },
   { path: '/projects', name: 'Projects', element: Projects },
+
+  { path: '/deploy/gitops', name: 'Products', element: Products },
 
   { path: '/cost/overview', name: 'CostOverview', element: CostOverview },
 ]
