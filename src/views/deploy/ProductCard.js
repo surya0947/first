@@ -20,12 +20,28 @@ import {
   CRow,
 } from '@coreui/react'
 import ReactImg from 'src/assets/images/react.jpg'
+import CIcon from '@coreui/icons-react'
+import { cilBell, cilNoteAdd, cilPlus, cilPencil, cilDelete, cilX  } from '@coreui/icons'
 
 const ProductCard = (props) => {
   console.log("--------", props)
   return (
      <CCol xs>
        <CCard>
+          <CCardHeader className="ms-auto">
+            <CNav variant="pills" className="card-header-pills md-end">
+                <CNavItem>
+                    <CNavLink>
+                        <CIcon icon={cilPencil}/>
+                    </CNavLink>
+                </CNavItem>
+                <CNavItem>
+                    <CNavLink>
+                        <CIcon icon={cilDelete}/> 
+                    </CNavLink>
+                </CNavItem>
+            </CNav>
+          </CCardHeader>
          <CCardImage orientation="top" src={ReactImg} />
          <CCardBody>
            <CCardTitle>Product: {props.data.product}</CCardTitle>
@@ -35,8 +51,19 @@ const ProductCard = (props) => {
               <CListGroupItem>clusterName: {props.data.clusterName}</CListGroupItem>
               <CListGroupItem>cloud: {props.data.cloud}</CListGroupItem>
             </CListGroup>
-         <CCardFooter>
-           <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+         <CCardFooter className="text-center">
+            <CNav variant="pills" className="card-header-pills justify-content-md-center">
+                <CNavItem>
+                    <CNavLink active className="me-2">
+                        Healthy
+                    </CNavLink>
+                </CNavItem>
+                <CNavItem>
+                    <CNavLink active className="me-2">
+                        Sync
+                    </CNavLink>
+                </CNavItem>
+            </CNav>
          </CCardFooter>
        </CCard>
      </CCol>
