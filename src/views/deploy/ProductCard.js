@@ -54,12 +54,12 @@ const ProductCard = (props) => {
          <CCardFooter className="text-center">
             <CNav variant="pills" className="card-header-pills justify-content-md-center">
                 <CNavItem>
-                    <CNavLink active className="me-2">
+                    <CNavLink active className="me-2 bg-success">
                         Healthy
                     </CNavLink>
                 </CNavItem>
                 <CNavItem>
-                    <CNavLink active className="me-2">
+                    <CNavLink active className="me-2 bg-warning">
                         Sync
                     </CNavLink>
                 </CNavItem>
