@@ -9,7 +9,7 @@ import {
   CChartRadar,
 } from '@coreui/react-chartjs'
 
-class BuildOverview extends React.Component {
+class DeployOverview extends React.Component {
   render() {
     const random = () => Math.round(Math.random() * 100)
     return (
@@ -108,4 +108,4 @@ class BuildOverview extends React.Component {
   }
 }
 
-export default BuildOverview
+export default DeployOverview

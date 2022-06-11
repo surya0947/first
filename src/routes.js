@@ -61,18 +61,20 @@ const Home = React.lazy(() => import('./views/home/Home'))
 //Projects
 const Projects = React.lazy(() => import('./views/projects/Projects'))
 
-//Products un deploy
+//Deploy
 const Products = React.lazy(() => import('./views/deploy/Products'))
+const Services = React.lazy(() => import('./views/deploy/Services'))
+const Connectors = React.lazy(() => import('./views/deploy/Connectors'))
+const DeployOverview = React.lazy(() => import('./views/deploy/DeployOverview'))
+const Environment = React.lazy(() => import('./views/deploy/Environment'))
 
 //Cost
 const CostOverview = React.lazy(() => import('./views/cost/CostOverview'))
 
 //Provisioning
+const ProvisioningOverview = React.lazy(() => import('./views/Provisioning/ProvisioningOverview'))
 
-//Deploy
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
-  { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
@@ -115,7 +117,10 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', element: Modals },
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
 
-  { path: '/build', name: 'Build', element: Alerts, exact: true },
+  { path: '/', exact: true, name: 'Home' },
+  { path: '/dashboard', name: 'Dashboard', element: Dashboard },
+
+  { path: '/build', name: 'Build', element: BuildOverview, exact: true },
   { path: '/build/builds', name: 'Builds', element: Builds },
   { path: '/build/pipelinerun', name: 'PipelineRun', element: PipelineRun },
   { path: '/build/overview', name: 'BuildOverview', element: BuildOverview },
@@ -125,9 +130,18 @@ const routes = [
   { path: '/home', name: 'Home', element: Home },
   { path: '/projects', name: 'Projects', element: Projects },
 
+  { path: '/deploy', name: 'Deploy', element: DeployOverview,  exact: true },
   { path: '/deploy/gitops', name: 'Products', element: Products },
+  { path: '/deploy/services', name: 'Services', element: Services },
+  { path: '/deploy/connectors', name: 'Connectors', element: Connectors },
+  { path: '/deploy/overview', name: 'DeployOverview', element: DeployOverview },
+  { path: '/deploy/environment', name: 'Environment', element: Environment },
 
+  { path: '/cost', name: 'Cost', element: CostOverview,  exact: true },
   { path: '/cost/overview', name: 'CostOverview', element: CostOverview },
+
+  { path: '/provisioning', name: 'Provisioning', element: ProvisioningOverview,  exact: true },
+  { path: '/provisioning/overview', name: 'ProvisioningOverview', element: ProvisioningOverview },
 ]
 
 export default routes
