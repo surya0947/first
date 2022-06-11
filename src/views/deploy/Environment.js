@@ -19,7 +19,9 @@ import {
   CCol,
   CRow,
 } from '@coreui/react'
+import CIcon from '@coreui/icons-react'
 import ReactImg from 'src/assets/images/react.jpg'
+import { cilBell, cilNoteAdd, cilPlus, cilPencil, cilDelete, cilX  } from '@coreui/icons'
 
 class Environment extends React.Component {
   render() {
@@ -28,6 +30,22 @@ class Environment extends React.Component {
         <CRow xs={{ cols: 1, gutter: 4 }} md={{ cols: 3 }}>
           <CCol xs>
             <CCard>
+            <CCardHeader className="ms-auto">
+                <CNav variant="pills" className="card-header-pills md-end ms-auto">
+                    <CNavItem className="me-2">
+                    <CNavLink active>
+                    <CIcon icon={cilPencil} className="me-2"/>
+                        Edit
+                    </CNavLink>
+                    </CNavItem>
+                    <CNavItem className="me-2">
+                    <CNavLink active>
+                    <CIcon icon={cilDelete} className="me-2"/>
+                        Delete 
+                    </CNavLink>
+                    </CNavItem>
+                </CNav>
+                </CCardHeader>
               <CCardImage orientation="top" src={ReactImg} />
               <CCardBody>
                 <CCardTitle>Environment 1</CCardTitle>
@@ -43,6 +61,22 @@ class Environment extends React.Component {
           </CCol>
           <CCol xs>
             <CCard>
+            <CCardHeader className="ms-auto">
+                <CNav variant="pills" className="card-header-pills md-end ms-auto">
+                    <CNavItem className="me-2">
+                    <CNavLink active>
+                    <CIcon icon={cilPencil} className="me-2"/>
+                        Edit
+                    </CNavLink>
+                    </CNavItem>
+                    <CNavItem className="me-2">
+                    <CNavLink active>
+                    <CIcon icon={cilDelete} className="me-2"/>
+                        Delete 
+                    </CNavLink>
+                    </CNavItem>
+                </CNav>
+                </CCardHeader>
               <CCardImage orientation="top" src={ReactImg} />
               <CCardBody>
                 <CCardTitle>Environment 2</CCardTitle>
