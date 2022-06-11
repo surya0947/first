@@ -19,13 +19,14 @@ import {
   CCol,
   CRow,
   CCloseButton,
+  CToastClose,
 } from '@coreui/react'
 import { getStyle } from '@coreui/utils'
 import CIcon from '@coreui/icons-react'
 import { CChartBar, CChartLine } from '@coreui/react-chartjs'
 import { DocsExample } from 'src/components'
 import ReactImg from 'src/assets/images/react.jpg'
-import { cilBell, cilNoteAdd, cilPlus } from '@coreui/icons'
+import { cilBell, cilNoteAdd, cilPlus, cilPencil, cilDelete, cilX  } from '@coreui/icons'
 
 const Projects = () => {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
@@ -45,11 +46,29 @@ const Projects = () => {
       </div>
       <CCol xs={4}>
         <CCard className="mb-4">
-          <CCardBody>
+            <CCardHeader>
+                <CNav variant="pills" className="card-header-pills md-end ms-auto">
+                  <CNavItem className="me-2">
+                    <CNavLink active>
+                    <CIcon icon={cilPencil} className="me-2"/>
+                      Edit
+                    </CNavLink>
+                  </CNavItem>
+                  <CNavItem className="me-2">
+                    <CNavLink active>
+                    <CIcon icon={cilDelete} className="me-2"/>
+                      Delete 
+                    </CNavLink>
+                  </CNavItem>
+                </CNav>
+              </CCardHeader>
+            <CCardBody>
             <CCard style={{ width: '22rem' }}>
               <CCardImage orientation="top" src={ReactImg} />
               <CCardBody>
-                <CCardTitle>Sample Project 1</CCardTitle>
+                <CCardTitle>
+                  SampleProject 1
+                </CCardTitle>
                 <CCardText>
                   Some quick example text to build on the card title and make up the bulk of the
                   card&#39;s content.
@@ -61,11 +80,27 @@ const Projects = () => {
                 <CListGroupItem>Vestibulum at eros</CListGroupItem>
               </CListGroup>
             </CCard>
-          </CCardBody>
+            </CCardBody>
         </CCard>
       </CCol>
       <CCol xs={4}>
         <CCard className="mb-4">
+          <CCardHeader>
+            <CNav variant="pills" className="card-header-pills md-end ms-auto">
+              <CNavItem className="me-2">
+                <CNavLink active>
+                <CIcon icon={cilPencil} className="me-2"/>
+                  Edit
+                </CNavLink>
+              </CNavItem>
+              <CNavItem className="me-2">
+                <CNavLink active>
+                <CIcon icon={cilDelete} className="me-2"/>
+                  Delete 
+                </CNavLink>
+              </CNavItem>
+            </CNav>
+          </CCardHeader>
           <CCardBody>
             <CCard style={{ width: '22rem' }}>
               <CCardImage orientation="top" src={ReactImg} />
@@ -87,6 +122,22 @@ const Projects = () => {
       </CCol>
       <CCol xs={4}>
         <CCard className="mb-4">
+        <CCardHeader>
+            <CNav variant="pills" className="card-header-pills md-end ms-auto">
+              <CNavItem className="me-2">
+                <CNavLink active>
+                <CIcon icon={cilPencil} className="me-2"/>
+                  Edit
+                </CNavLink>
+              </CNavItem>
+              <CNavItem className="me-2">
+                <CNavLink active>
+                <CIcon icon={cilDelete} className="me-2"/>
+                  Delete 
+                </CNavLink>
+              </CNavItem>
+            </CNav>
+          </CCardHeader>
           <CCardBody>
             <CCard style={{ width: '22rem' }}>
               <CCardImage orientation="top" src={ReactImg} />

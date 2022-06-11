@@ -52,7 +52,7 @@ class Environment extends React.Component {
                 </CCardText>
               </CCardBody>
               <CCardFooter>
-                <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+                 <small className="text-medium-emphasis">Last updated 3 mins ago</small>
               </CCardFooter>
             </CCard>
           </CCol>
