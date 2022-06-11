@@ -31,18 +31,16 @@ class Environment extends React.Component {
           <CCol xs>
             <CCard>
             <CCardHeader className="ms-auto">
-                <CNav variant="pills" className="card-header-pills md-end ms-auto">
-                    <CNavItem className="me-2">
-                    <CNavLink active>
-                    <CIcon icon={cilPencil} className="me-2"/>
-                        Edit
-                    </CNavLink>
+                <CNav variant="pills" className="card-header-pills md-end">
+                    <CNavItem>
+                        <CNavLink>
+                            <CIcon icon={cilPencil}/>
+                        </CNavLink>
                     </CNavItem>
-                    <CNavItem className="me-2">
-                    <CNavLink active>
-                    <CIcon icon={cilDelete} className="me-2"/>
-                        Delete 
-                    </CNavLink>
+                    <CNavItem>
+                        <CNavLink>
+                            <CIcon icon={cilDelete}/> 
+                        </CNavLink>
                     </CNavItem>
                 </CNav>
                 </CCardHeader>
@@ -62,18 +60,16 @@ class Environment extends React.Component {
           <CCol xs>
             <CCard>
             <CCardHeader className="ms-auto">
-                <CNav variant="pills" className="card-header-pills md-end ms-auto">
-                    <CNavItem className="me-2">
-                    <CNavLink active>
-                    <CIcon icon={cilPencil} className="me-2"/>
-                        Edit
-                    </CNavLink>
+                <CNav variant="pills" className="card-header-pills md-end">
+                    <CNavItem>
+                        <CNavLink>
+                            <CIcon icon={cilPencil}/>
+                        </CNavLink>
                     </CNavItem>
-                    <CNavItem className="me-2">
-                    <CNavLink active>
-                    <CIcon icon={cilDelete} className="me-2"/>
-                        Delete 
-                    </CNavLink>
+                    <CNavItem>
+                        <CNavLink>
+                            <CIcon icon={cilDelete}/> 
+                        </CNavLink>
                     </CNavItem>
                 </CNav>
                 </CCardHeader>

@@ -45,19 +45,17 @@ const Projects = () => {
         <br></br>
       </div>
       <CCol xs={4}>
-        <CCard className="mb-4">
+        <CCard CCol="xs">
             <CCardHeader>
-                <CNav variant="pills" className="card-header-pills md-end ms-auto">
-                  <CNavItem className="me-2">
-                    <CNavLink active>
-                    <CIcon icon={cilPencil} className="me-2"/>
-                      Edit
+                <CNav variant="pills" className="card-header-pills justify-content-md-end">
+                  <CNavItem>
+                    <CNavLink>
+                    <CIcon icon={cilPencil}/>
                     </CNavLink>
                   </CNavItem>
-                  <CNavItem className="me-2">
-                    <CNavLink active>
-                    <CIcon icon={cilDelete} className="me-2"/>
-                      Delete 
+                  <CNavItem>
+                    <CNavLink>
+                    <CIcon icon={cilDelete}/> 
                     </CNavLink>
                   </CNavItem>
                 </CNav>
@@ -86,21 +84,19 @@ const Projects = () => {
       <CCol xs={4}>
         <CCard className="mb-4">
           <CCardHeader>
-            <CNav variant="pills" className="card-header-pills md-end ms-auto">
-              <CNavItem className="me-2">
-                <CNavLink active>
-                <CIcon icon={cilPencil} className="me-2"/>
-                  Edit
-                </CNavLink>
-              </CNavItem>
-              <CNavItem className="me-2">
-                <CNavLink active>
-                <CIcon icon={cilDelete} className="me-2"/>
-                  Delete 
-                </CNavLink>
-              </CNavItem>
-            </CNav>
-          </CCardHeader>
+                <CNav variant="pills" className="card-header-pills justify-content-md-end">
+                  <CNavItem>
+                    <CNavLink>
+                    <CIcon icon={cilPencil}/>
+                    </CNavLink>
+                  </CNavItem>
+                  <CNavItem>
+                    <CNavLink>
+                    <CIcon icon={cilDelete}/> 
+                    </CNavLink>
+                  </CNavItem>
+                </CNav>
+            </CCardHeader>
           <CCardBody>
             <CCard style={{ width: '22rem' }}>
               <CCardImage orientation="top" src={ReactImg} />
@@ -122,22 +118,20 @@ const Projects = () => {
       </CCol>
       <CCol xs={4}>
         <CCard className="mb-4">
-        <CCardHeader>
-            <CNav variant="pills" className="card-header-pills md-end ms-auto">
-              <CNavItem className="me-2">
-                <CNavLink active>
-                <CIcon icon={cilPencil} className="me-2"/>
-                  Edit
-                </CNavLink>
-              </CNavItem>
-              <CNavItem className="me-2">
-                <CNavLink active>
-                <CIcon icon={cilDelete} className="me-2"/>
-                  Delete 
-                </CNavLink>
-              </CNavItem>
-            </CNav>
-          </CCardHeader>
+          <CCardHeader>
+                <CNav variant="pills" className="card-header-pills justify-content-md-end">
+                  <CNavItem>
+                    <CNavLink>
+                    <CIcon icon={cilPencil}/>
+                    </CNavLink>
+                  </CNavItem>
+                  <CNavItem>
+                    <CNavLink>
+                    <CIcon icon={cilDelete}/> 
+                    </CNavLink>
+                  </CNavItem>
+                </CNav>
+            </CCardHeader>
           <CCardBody>
             <CCard style={{ width: '22rem' }}>
               <CCardImage orientation="top" src={ReactImg} />
