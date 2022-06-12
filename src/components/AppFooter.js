@@ -5,7 +5,7 @@ const AppFooter = () => {
   return (
     <CFooter>
       <div className="ms-auto">
-        <span className="me-1">Powered by fluentOps</span>
+        <span className="me-1">Powered by FluentOps</span>
       </div>
     </CFooter>
   )
