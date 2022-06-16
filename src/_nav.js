@@ -65,7 +65,7 @@ const _nav = [
       {
         component: CNavItem,
         name: 'Pipeline',
-        to: '/build/pipeline',
+        to: '/build/pipelines',
       },
       {
         component: CNavItem,

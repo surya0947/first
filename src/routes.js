@@ -51,7 +51,7 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 //Build
-const PipelineRun = React.lazy(() => import('./views/build/pipelinerun'))
+const Pipelines = React.lazy(() => import('./views/build/pipelines'))
 const Builds = React.lazy(() => import('./views/build/builds'))
 const BuildOverview = React.lazy(() => import('./views/build/BuildOverview'))
 const BuildConnectors = React.lazy(() => import('./views/build/BuildConnectors'))
@@ -123,7 +123,7 @@ const routes = [
 
   { path: '/build', name: 'Build', element: BuildOverview, exact: true },
   { path: '/build/builds', name: 'Builds', element: Builds },
-  { path: '/build/pipelinerun', name: 'PipelineRun', element: PipelineRun },
+  { path: '/build/pipelines', name: 'Pipelines', element: Pipelines },
   { path: '/build/overview', name: 'BuildOverview', element: BuildOverview },
   { path: '/build/connectors', name: 'BuildConnectors', element: BuildConnectors },
 
