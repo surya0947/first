@@ -3,6 +3,7 @@
   "version": "4.3.1",
   "description": "CoreUI Free React Admin Template",
   "homepage": ".",
+  "proxy": "http://localhost:9097/",
   "bugs": {
     "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
   },
@@ -37,6 +38,8 @@
     "chart.js": "^3.7.1",
     "classnames": "^2.3.1",
     "core-js": "^3.22.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-app-polyfill": "^3.0.0",
