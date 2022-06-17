@@ -52,6 +52,7 @@ export default class pipelines extends React.Component {
          <CTable>
           <CTableHead>
             <CTableRow color="primary">
+            <CTableHeaderCell scope="col">#</CTableHeaderCell>
               <CTableHeaderCell scope="col">Name</CTableHeaderCell>
               <CTableHeaderCell scope="col">Namespace</CTableHeaderCell>
               <CTableHeaderCell scope="col">Created</CTableHeaderCell>
@@ -60,6 +61,7 @@ export default class pipelines extends React.Component {
           <CTableBody>
             {items.map((item, index) => (  
               <CTableRow color="Info" key={index}>
+                <CTableDataCell>{index+1}</CTableDataCell>
                 <CTableHeaderCell scope="row">{item.name}</CTableHeaderCell>
                 <CTableDataCell>{item.namespace}</CTableDataCell>
                 <CTableDataCell>{item.createdTime}</CTableDataCell>
