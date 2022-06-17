@@ -55,6 +55,7 @@ const Pipelines = React.lazy(() => import('./views/build/pipelines'))
 const Builds = React.lazy(() => import('./views/build/builds'))
 const BuildOverview = React.lazy(() => import('./views/build/BuildOverview'))
 const BuildConnectors = React.lazy(() => import('./views/build/BuildConnectors'))
+const Tasks = React.lazy(() => import('./views/build/Tasks'))
 
 //Home
 const Home = React.lazy(() => import('./views/home/Home'))
@@ -126,6 +127,7 @@ const routes = [
   { path: '/build/pipelines', name: 'Pipelines', element: Pipelines },
   { path: '/build/overview', name: 'BuildOverview', element: BuildOverview },
   { path: '/build/connectors', name: 'BuildConnectors', element: BuildConnectors },
+  { path: '/build/tasks', name: 'Tasks', element: Tasks },
 
   { path: '/widgets', name: 'Widgets', element: Widgets },
 

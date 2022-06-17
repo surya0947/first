@@ -69,6 +69,11 @@ const _nav = [
       },
       {
         component: CNavItem,
+        name: 'Tasks',
+        to: '/build/tasks',
+      },
+      {
+        component: CNavItem,
         name: 'Connectors',
         to: '/build/connectors',
       },
