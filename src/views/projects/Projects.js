@@ -55,7 +55,7 @@ const Projects = () => {
                   </CNavItem>
                   <CNavItem>
                     <CNavLink>
-                    <CIcon icon={cilDelete}/> 
+                    <CIcon icon={cilX}/> 
                     </CNavLink>
                   </CNavItem>
                 </CNav>
@@ -92,7 +92,7 @@ const Projects = () => {
                   </CNavItem>
                   <CNavItem>
                     <CNavLink>
-                    <CIcon icon={cilDelete}/> 
+                    <CIcon icon={cilX}/> 
                     </CNavLink>
                   </CNavItem>
                 </CNav>
@@ -127,7 +127,7 @@ const Projects = () => {
                   </CNavItem>
                   <CNavItem>
                     <CNavLink>
-                    <CIcon icon={cilDelete}/> 
+                    <CIcon icon={cilX}/> 
                     </CNavLink>
                   </CNavItem>
                 </CNav>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   CRow,
   CCol,
@@ -12,11 +12,20 @@ import { getStyle } from '@coreui/utils'
 import { CChartBar, CChartLine } from '@coreui/react-chartjs'
 import CIcon from '@coreui/icons-react'
 import { cilArrowBottom, cilArrowTop, cilOptions } from '@coreui/icons'
+import { Navigate } from 'react-router-dom' 
+
 
 const WelcomeWidgetsDropdown = () => {
+
+  const [isAuth, setIsAuth] = useState(true)
+  if(!isAuth) {
+    return <Navigate to="/projects"></Navigate>
+  }
+
+
   return (
     <CRow>
-      <CCol sm={6} lg={3}>
+      <CCol sm={6} lg={3} onClick={() => setIsAuth(false)}>
         <CWidgetStatsA
           className="mb-4"
           color="primary"
